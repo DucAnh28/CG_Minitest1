@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<label><input type="number" id="number1">Nhập vào cạnh a</label>
+<button onclick="tinhtoan()">Tính toán cực mạnh</button>
+<p id="result"></p>
+<p id="result2"></p>
+</body>
+<script>
+    function tinhtoan(){
+        let canh = document.getElementById("number1").value;
+        let dientich = Math.pow(canh,2);
+        let chuvii = 4*canh ;
+        if (canh<0){
+            alert("Không có cạnh nào có giá trị âm cả")
+        }
+        else {
+            document.getElementById("result").innerHTML = "Diện tích hình vuông cạnh " + canh + " là " + dientich + "<br>"
+            document.getElementById("result2").innerHTML = "Chu vi hình vuông cạnh " + canh   + " là " + chuvii
+        }
+
+    }
+</script>
+</html>
